@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gym Management System</h1>
+        <p>Manage gym members efficiently</p>
+    </header>
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2>Add New Member</h2>
+
+            <input type="text" id="name" placeholder="Member Name">
+            <input type="number" id="age" placeholder="Age">
+            <select id="membership">
+                <option value="">Select Membership</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+
+            <button onclick="addMember()">Add Member</button>
+        </section>
+
+        <section class="table-section">
+            <h2>Member List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Membership</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="memberTable">
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Gym Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
